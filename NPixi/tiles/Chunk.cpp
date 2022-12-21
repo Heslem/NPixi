@@ -13,7 +13,7 @@ Chunk::Chunk(sf::Texture* tilemapTexture, const sf::Vector2f& position, noize::P
 	for (int y = 0; y < CHUNK_SIZE_Y; ++y) {
 		for (int x = 0; x < CHUNK_SIZE_X; ++x) {
 			double n = noise.ValueNoise_2D(x + position.x , y + position.y);
-
+			 
 			tile_type t;
 
 			if (n > 0.21) {
